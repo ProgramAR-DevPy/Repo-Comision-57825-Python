@@ -1,0 +1,76 @@
+Consigna
+
+Crear un programa que permita emular el registro y almacenamiento de usuarios en un diccionario. Crear el programa utilizando el concepto de funciones, diccionarios, bucles y condicionales.
+Se debe entregar
+Se debe entregar todo el programa.
+
+Sugerencias
+El formato de registro es: Nombre de usuario y Contraseña.
+Utilizar una función para almacenar la información y otra función para mostrar la información.
+Utilizar un diccionario para almacenar dicha información, con el par usuario-contraseña (clave-valor).
+Utilizar otra función para el login de usuarios, comprobando que la contraseña coincida con el usuario.
+
+
+##################################################
+crear un diccionario vacio
+
+Crear una funcion registrar_usuario():
+def registrar_usuario():
+input que pida el usuario
+input(DKFNADFNASDKJFNAKJDSFNASDJKF)
+bucle while si el input esta en usuarios
+KJFHGADJSFHGADSFADSFASD
+imprimo usuario ya registrado
+input que pida el Nombre
+
+input para contraseña
+agregar datos al diccionario
+una leyenda del registro.
+
+#############################################################
+una funcion mostrar usuario()
+una condicion que valide en el diccionario es TRUE
+si usuario diccionario
+imprimo texto lista de usuarios
+hago un bucle (for) con 2 variables de iteracion(usuario , contraseña) in diccionario.items
+imprimimos el usuario y la contraseña
+y sino es true le digo no hay usuarios
+
+#################################################################
+
+########################################
+
+funcion iniciar_sesion:
+input que ingrese su usuario
+input para la contraseña
+condicion que verifique (in) y verificar que ese nombre de usuario este asociado a una contraseña 
+TODAS LAS CONDICIONES SE TIENEN QUE TORNAR TRUE (AND)
+IMPRIMIMOS ALGO, DE LO CONTRARIO IMPRIMIMOS OTRO ALGO.
+
+###################################################
+
+
+#MENU
+Defino un bucle (while) en verdadero
+imprimimos el menu de opciones registrar usuario, otra de iniciar sesion (3 opciones)
+registrar usuario
+mostrar usuarios
+iniciar sesion
+salir del programa
+
+opcion en un input
+
+una condicion la opcion 1
+llamo a registrar usuario
+otra para la opcion 2
+llamo a la funcion mostrar usuario
+otra para la opcion 3
+llamamos a iniciar sesion
+otra para opcion 4 que va a ser salir
+imprimo un mensajito de amor
+break
+
+
+else:un mensaje de que escriba bien
+
+
