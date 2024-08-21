@@ -13,6 +13,5 @@ urlpatterns = [
     path('busquedaCamada/', views.busquedaCamada, name='BusquedaCamada'),
     path('buscar/', views.buscar),
 
-   
-    
 ]
+

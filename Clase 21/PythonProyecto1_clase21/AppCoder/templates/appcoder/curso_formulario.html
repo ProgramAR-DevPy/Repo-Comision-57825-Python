@@ -8,11 +8,11 @@
 </head>
 <body>
     <form action="/AppCoder/curso-form/" method="post">
-       
+        {% csrf_token %}
         <p> Curso: <input type = "text" name="curso">
         <p> Camada: <input type = "text" name="camada">
         <input type = "submit" value="Enviar">
      </form>   
 
 </body>
-</html> {% csrf_token %}
+</html> 

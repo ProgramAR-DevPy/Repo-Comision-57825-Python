@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>HOLA MUNDO DESDE PLANTILLA</h1> // SOLO TIENEN QUE TENER 1 SOLO H1 POR PAGINA
+    <p>Hola, esta es nuestra primer plantilla!</p>
+
+    <p style="color:rgb(253, 31, 2)"> MI nombre es: {{nombre}} </p>
+    <p style="color: green;"> Mi apellido es: {{apellido}} </p>
+
+    <p> ES TEMPLATE FUE CREADO: {{hoy}}</p>
+
+    <p> Estas son mis notas: </p>
+    <p>
+
+        {% for n in notas %}
+
+        
+                {% if n < 4 %} 
+                    <p style="color: red;"> NOTA MALA {{n}}  </p>
+                {%else%} <p style="color: green"> NOTA BUENA {{n}}" </p>
+                
+                {% endif %}      
+        
+        
+        
+        {% endfor %} </p>
+
+
+</body>
+
+</html>

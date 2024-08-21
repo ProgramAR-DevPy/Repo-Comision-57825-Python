@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    {% extends "appcoder/padre.html" %}
+    {% load static %}
+    {% block contenidoQueCambia %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table>
+            {{ miFormulario.as_table }}
+        </table>
+        <input type="submit" value="Enviar">
+
+    </form>
+ 
+
+    {% endblock %}
+
+
+
+
+</body>
+</html>
