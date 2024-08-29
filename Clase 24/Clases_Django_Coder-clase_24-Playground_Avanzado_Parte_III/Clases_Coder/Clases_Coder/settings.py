@@ -126,5 +126,9 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+#Indica cual es la URL de la carpeta media
 MEDIA_URL = '/media/'
+
+#Le indicamos cul es el path
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

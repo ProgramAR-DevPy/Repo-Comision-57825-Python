@@ -9,7 +9,7 @@ from django.contrib.auth.views import PasswordChangeView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 
-#c0d3r_h0u53
+
 
 # Create your views here.
 def login_request(request):
@@ -51,33 +51,6 @@ def register(request):
     form = UserRegisterForm()     
     return render(request,"users/registro.html" ,  {"form":form, "msg_register": msg_register})
 
-# Vista de editar el perfil
-# Obligamos a loguearse para editar los datos del usuario
-# @login_required
-# def editar_perfil(request):
-#     # El usuario para poder editar su perfil primero debe estar logueado.
-#     # Al estar logueado, podremos encontrar dentro del request la instancia
-#     # del usuario -> request.user
-#     usuario = request.user
-
-#     if request.method == 'POST':
-#         miFormulario = UserEditForm(request.POST, request.FILES, instance=usuario)
-#         if miFormulario.is_valid():
-#             if miFormulario.cleaned_data.get('imagen'):
-#                 if Imagen.objects.filter(user=usuario).exists():
-#                     usuario.imagen.imagen = miFormulario.cleaned_data.get('imagen')
-#                     usuario.imagen.save()
-#                 else:
-#                     avatar = Imagen(user=usuario, imagen=miFormulario.cleaned_data.get('imagen'))
-#                     avatar.save()
-#             miFormulario.save()
-
-#             return render(request, "AppCoder/index.html")
-
-#     else:
-#         miFormulario = UserEditForm(instance=usuario)
-
-#     return render(request, "users/editar_usuario.html", {"mi_form": miFormulario, "usuario": usuario})
 
 @login_required  # Decorador que requiere que el usuario esté autenticado (logueado) para acceder a esta vista
 def editar_perfil(request):
@@ -115,15 +88,6 @@ def editar_perfil(request):
 
     # Renderiza la plantilla "users/editar_usuario.html", pasando el formulario y la instancia del usuario como contexto
     return render(request, "users/editar_usuario.html", {"mi_form": miFormulario, "usuario": usuario})
-
-
-
-
-
-
-
-
-
 
 
 class CambiarContrasenia(LoginRequiredMixin, PasswordChangeView):

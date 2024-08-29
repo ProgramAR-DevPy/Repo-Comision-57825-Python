@@ -1,3 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    {% extends 'AppCoder/base.html' %}
+
+    {% load static %}
+
+    {% block title %} Inicio {% endblock title %}
+
+    {% block main %}
+
+
+
+    <form method="POST">
+        {% csrf_token %}
+        Estas seguro/a {{ object }}
+        <input type="submit" value="Borrar">
+    </form>
+
+
+
+
+    {% endblock main %}
+
+
+</body>
+
+</html>
+
+
 {% extends 'AppCoder/base.html' %}
 
 {% load static %}
@@ -5,7 +43,7 @@
 {% block title %} Inicio {% endblock title %}
 
 {% block main %}
-    
+
 
 
 <form method="POST">
@@ -18,5 +56,3 @@
 
 
 {% endblock main %}
-
-
